@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线代码对比/合并工具|代码对比</title>
+    <meta content="代码对比,代码对比工具,代码合并工具,在线代码对比工具,在线代码合并工具,代码差异对比,差异代码合并" name="keywords"/>
+    <meta content="在线代码对比/合并工具方便程序员查找出2段代码间的差异，并能进行合并。" name="description"/>
+    <link rel="stylesheet" type="text/css" href="css/indexCodeMirror.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/merge.css"/>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/home-1589270335000.css" rel="stylesheet">
+  
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <style>
+        .CodeMirror-merge-hide-undeline .CodeMirror-merge-r-inserted,
+        .CodeMirror-merge-hide-undeline .CodeMirror-merge-l-inserted,
+        .CodeMirror-merge-hide-undeline .CodeMirror-merge-r-deleted,
+        .CodeMirror-merge-hide-undeline .CodeMirror-merge-l-deleted{
+            background-size: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-color-f7">
+
+<main class="editor-con">
+    <div class="row-fluid" style="height: calc(100% - 50px)">
+        <div class="editor-box1 compare-editor" style="margin-top: 0">
+            <div id="view" class="CodeMirror-merge-hide-undeline"></div>
+        </div>
+    </div>
+    <!-- 功能 -->
+    <div class="compare-features">
+        <button type="button" class="btn btn-primary" id="findDifDouble">双向</button>
+        <button type="button" class="btn btn-primary" id="findDifThirty">三向</button>
+        <div class="checkbox"><label for="findDifShowDiff"><input type="checkbox" id="findDifShowDiff" checked>显示差异</label></div>
+        <div class="checkbox"><label for="findDifGapShadow"><input type="checkbox" id="findDifGapShadow" checked>显示间隔阴影</label></div>
+        <div class="checkbox"><label for="findDifCollapse"><input type="checkbox" id="findDifCollapse">折叠相同的代码</label></div>
+        <div class="checkbox"><label for="showDifUndeline"><input type="checkbox" id="showDifUndeline">显示差异下划线</label></div>
+    </div>
+</main>
+
+
+
+
+
+<script src="js/global.min.js"></script>
+
+
+<!-- 编辑器组件 -->
+<script src="js/mergeCodeMirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/finddifEncode.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- 底部 -->
+
+
+</body>
+</html>
